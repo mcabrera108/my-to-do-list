@@ -123,6 +123,7 @@ function Task(props) {
         </div>
       ) : (
         <div className={style.taskDetailsContainer}>
+          <span className={style.taskDateSpan}>{props.indTask.taskDate}</span>
           <div className={style.iconContainer} onClick={updateDropdown}>
             <i
               className="fa fa-ellipsis-v"

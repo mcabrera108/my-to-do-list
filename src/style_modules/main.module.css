@@ -108,7 +108,7 @@
   cursor: pointer;
 }
 .taskNameContainer {
-  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  font-size: clamp(0.6rem, 2vw, 1.2rem);
   font-family: var(--font-business-family);
 }
 .taskNameContainer.checked {

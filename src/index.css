@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --peach-drk-bld-bg-color: #fda899;
+  --peach-drk-bg-color: #fcd5ce;
+  --peach-neutral-bg-color: #f8eae7;
+  --orange-drk-bg-color: #f8dcc4;
+  --orange-drk-bld-bg-color: #ffa135;
+  --orange-light-bg-color: #f8dcbc;
+  --font-fancy-family: "Playwrite CU", "Cedarville Cursive", "Arial", sans-serif;
+  --font-business-family: "Arial", sans-serif;
+}

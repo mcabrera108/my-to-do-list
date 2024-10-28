@@ -1,0 +1,37 @@
+import { createContext } from "react";
+
+const projectContext = createContext({
+  overlay: false,
+  addFlag: false,
+  summaryFlag: false,
+  editFlag: false,
+  projects: JSON.parse(localStorage.getItem("projects") || "[]"),
+  tasks: JSON.parse(localStorage.getItem("tasks") || "[]"),
+  projectInput: "",
+  deleteInput: "",
+  taskInput: "",
+  taskDescription: "",
+  taskPriority: "",
+  taskDate: "",
+  currentTaskDetails: "",
+  toggle: false,
+  handleSetPriority: () => {},
+  handleOverlay: () => {},
+  handleEdit: () => {},
+  handleSetHeaderToggle: () => {},
+  handleSetProjectInput: () => {},
+  handleSetDeleteInput: () => {},
+  handleSetProject: () => {},
+  handleDeleteProject: () => {},
+  handleSetTaskDate: () => {},
+  handleSetTask: () => {},
+  handleCheckedInput: () => {},
+  handleDeleteTask: () => {},
+  handleSetEditFlag: () => {},
+  handleSetTaskInput: () => {},
+  handleSetTaskDescription: () => {},
+  handleSetSummaryFlag: () => {},
+  handleCurrentTaskDetails: () => {},
+});
+
+export default projectContext;

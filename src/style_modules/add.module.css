@@ -1,0 +1,72 @@
+.addContainer {
+  z-index: 5;
+  position: fixed;
+  left: 20%;
+  width: 60%;
+  top: 10vh;
+  height: 70vh;
+  border-radius: 10px 10px 10px 10px;
+  background-color: var(--orange-drk-bg-color);
+}
+.addContainerHeader {
+  padding: 0.5rem 1rem;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 2rem;
+  font-family: var(--font-business-family);
+  background-color: var(--peach-drk-bld-bg-color);
+}
+.addTaskDesc {
+  font-size: 1.5rem;
+  font-family: var(--font-business-family);
+}
+.addContainerBody {
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+  font-family: var(--font-business-family);
+  background-color: var(--peach-neutral-bg-color);
+  font-size: 1.3rem;
+  height: 100%;
+}
+.addContainerMain {
+  padding: 0.4rem 0.5rem;
+  width: 100%;
+}
+.addContainerSideNav {
+  width: 20%;
+  border-radius: 0px 0px 0px 10px;
+  background-color: var(--orange-light-bg-color);
+}
+.addInput {
+  border-radius: 5px;
+  font-size: 1.3rem;
+  width: 100%;
+  overflow-y: scroll;
+}
+.addInputContainer {
+  margin-bottom: 0.5rem;
+}
+.addContainerProjectTitleLabel {
+  font-weight: 600;
+}
+.addSubmitBtn {
+  padding: 0.2rem 0.4rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: var(--peach-drk-bld-bg-color);
+}
+.addInputTitle,
+.detailsTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.detailsTaskDesc {
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 1023px) {
+  .addContainer {
+    width: 100%;
+    left: 0;
+  }
+}

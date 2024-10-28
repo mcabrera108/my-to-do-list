@@ -1,0 +1,221 @@
+.mainContainer {
+  display: flex;
+  min-height: 100vh;
+}
+.addTaskBtn {
+  cursor: pointer;
+  bottom: 0;
+  right: 1rem;
+  position: fixed;
+  border: none;
+  font-size: 6rem;
+  background: none;
+  z-index: 3;
+}
+.sidenavContainer {
+  height: auto;
+  width: 25%;
+  background-color: var(--peach-neutral-bg-color);
+  padding: 2rem;
+}
+.sidenavOptionTitle,
+.sidenavOptionHeader {
+  font-size: 2rem;
+  font-family: var(--font-fancy-family);
+}
+.sidenavOptionBtn {
+  font-size: clamp(0.8rem, 2vw, 2rem);
+  width: 100%;
+  font-family: var(--font-business-family);
+  border-radius: 10px;
+}
+.sidenavOptionBtn a,
+.sidenavOptionBtn button {
+  cursor: pointer;
+  padding: 1.3rem 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+.sidenavOptionBtn button {
+  background: none;
+  border: none;
+  font-size: clamp(0.8rem, 2vw, 2rem);
+}
+.sidenavOptionBtn:hover {
+  background-color: var(--peach-drk-bg-color);
+}
+.sidenavProjectTitleContainer {
+  border-radius: 10px;
+  height: 50vh;
+  box-shadow: 0px 3px 10px darkgray;
+  overflow-y: auto;
+  scrollbar-color: var(--peach-drk-bld-bg-color) var(--peach-neutral-bg-color);
+  overflow-x: hidden;
+}
+.taskContainer {
+  width: 75%;
+  overflow-y: auto;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 4;
+  cursor: pointer;
+}
+.indvTaskContainer {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  background-color: var(--peach-neutral-bg-color);
+}
+.taskCheckContainer.notChecked {
+  text-decoration: none;
+}
+.taskCheckContainer {
+  display: flex;
+  align-items: center;
+}
+.indvTaskContainer {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  background-color: var(--peach-neutral-bg-color);
+}
+.taskCheckContainer.notChecked {
+  text-decoration: none;
+}
+.taskCheckContainer {
+  display: flex;
+  align-items: center;
+}
+.taskCheckboxInput {
+  margin: 0rem 1rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  cursor: pointer;
+}
+.taskNameContainer {
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  font-family: var(--font-business-family);
+}
+.taskNameContainer.checked {
+  text-decoration: line-through;
+}
+.taskDetailsContainer {
+  display: flex;
+  align-items: center;
+}
+.taskDetailsBtn {
+  font-size: clamp(0.7rem, 2vw, 1.3rem);
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  border: 2px solid var(--orange-drk-bld-bg-color);
+  background: none;
+  margin: 0 1rem;
+}
+.taskDetailsBtn:hover {
+  background-color: var(--orange-drk-bld-bg-color);
+  cursor: pointer;
+}
+.taskDateSpan {
+  font-size: clamp(0.7rem, 2vw, 1.3rem);
+  margin: 0rem 1rem 0rem 0rem;
+  color: var(--orange-drk-bld-bg-color);
+}
+.headerProjectContainer {
+  display: flex;
+  justify-content: center;
+}
+.headerProjectContainer button {
+  font-size: 1.5rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-family: var(--font-business-family);
+  font-weight: 600;
+  background-color: var(--peach-drk-bld-bg-color);
+  cursor: pointer;
+}
+.taskWrapper {
+  width: 100%;
+  padding: 3rem 2rem;
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1023px) {
+  .sidenavContainer.notActive {
+    display: none;
+  }
+  .sidenavContainer.active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  .addTaskBtn.active {
+    display: none;
+  }
+  .addTaskBtn.notActive {
+    display: block;
+  }
+  .sideNavOptionContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .sidenavOptionBtn {
+    font-size: clamp(1.2rem, 3vw, 3rem);
+  }
+  .taskContainer {
+    background-color: var(--peach-neutral-bg-color);
+  }
+  .taskContainer,
+  .taskWrapper {
+    width: 100%;
+  }
+  .taskWrapper {
+    padding: 1rem 1rem;
+  }
+  .taskDropdown {
+    overflow: auto;
+    position: absolute;
+    right: 0;
+    background-color: rgb(243, 243, 243);
+  }
+  .taskDropdown button {
+    background: none;
+    padding: 12px 16px;
+    border: none;
+  }
+  .taskCheckboxInput {
+    display: flex;
+  }
+  .taskNameContainer {
+    display: flex;
+  }
+  .indvTaskContainer {
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    background-color: white;
+  }
+  .taskDropdown button {
+    background: none;
+    padding: 12px 16px;
+    border: none;
+  }
+}

@@ -1,0 +1,8 @@
+.footerContainer {
+  background-color: var(--peach-drk-bld-bg-color);
+}
+.footerWrapper {
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: var(--font-business-family);
+}

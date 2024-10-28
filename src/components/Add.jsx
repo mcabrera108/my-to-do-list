@@ -39,8 +39,8 @@ function Add(props) {
                     value={props.taskInput}
                     onChange={props.handleSetTaskInput}
                     className={style.addInput}
-                    maxLength={30}
-                    placeholder="This is a Task Title"
+                    maxLength={50}
+                    placeholder="Max Length is 50 Characters..."
                     required={true}
                   />
                 </div>
@@ -116,8 +116,8 @@ function Add(props) {
                     value={props.projectInput}
                     onChange={props.handleSetProjectInput}
                     className={style.addInput}
-                    placeholder="Max Length is 30 characters..."
-                    maxLength={30}
+                    placeholder="Max Length is 50 characters..."
+                    maxLength={50}
                     required={true}
                   />
                 </div>

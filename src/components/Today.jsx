@@ -8,7 +8,7 @@ function Today() {
   const todayDate = new Date();
   const format = "YYYY-MM-DD";
   const output = formatToTimeZone(todayDate, format, {
-    timeZone: "America/Chicago",
+    timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
   });
   const { tasks } = useContext(projectContext);
   return (
